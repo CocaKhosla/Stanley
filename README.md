@@ -10,3 +10,19 @@ Traditionally, for a rover to move, it would require to move upto a certain poin
 If we were simply to try turning in the direction of the goal while moving straight, we might overshoot the goal or undershoot it since we might not turn enough as we are constantly moving and the required turning angle is calculated with respect to a fixed position. Therefore, we need to identify the extra heading anglee that needs to be turned to face the next point.
 
 ### The Mathematics
+
+
+### How To Use
+__*IF YOU'RE USING ROS MELODIC*__
+1. Clone the repository in your desired ROS package. 
+2. Go into the folder Stanley and make the file ```StanleySim-Working-Demo.py``` and ```liveplot.py``` executable using the command: 
+```
+chmod +x StanleySim-Working-Demo.py
+chmod +x liveplot.py
+``` 
+3. Finally, after getting ```roscore``` running and gazebo turned on, run the two files in two different terminal tabs
+```
+rosrun <your_ROS_package> StanleySim-Working-Demo.py
+rosrun <your_ROS_package> liveplot.py
+```
+4. Voilà. The default path in the code is a _sine curve_. You can change that yourself to whatever you like.
