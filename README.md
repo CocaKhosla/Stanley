@@ -1,7 +1,7 @@
 # Stanley
 
 ### Introduction
-> The Stanley Controller was developed by **Stanford University** to win the *DARPA 2005 Challenge*. 
+> The Stanley Controller was developed by **Stanford University** to win the *DARPA (Defense Advanced Research Projects Agency) Grand Challenge 2005 Challenge*. 
 > It corrects the heading error of a rover while moving to provide the required turing while moving by providing a *closed feedback loop*.
 
 ### The Need for Stanley Controller
@@ -11,6 +11,9 @@ If we were simply to try turning in the direction of the goal while moving strai
 
 ### The Mathematics
 ![My Beautifully Drawn Stanley Explanation](https://github.com/CocaKhosla/Stanley/blob/images/StanleyImage.jpg?raw=true)
+The current trajectory has a _minimum lateral error_ with the desired trajectory called the _cross track error = k_. Cross track error is calculated by first finding slope of the _desired trajectory_. Then slope of the error = ```-1/slope```. Therefore, with the slope and our given point, we can get a line that passes through our _current trajectory_ and is _perpendicular_ to the _desired trajectory_. Through the _intersection_ of this line with the _desired trajectory_, we get the point of minimum distance. Therefore, _cross track error_ is simply the _distance_ between these two points.
+
+
 
 ### How To Use
 __*IF YOU'RE USING ROS MELODIC*__
