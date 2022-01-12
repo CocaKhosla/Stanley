@@ -10,7 +10,7 @@ Traditionally, for a rover to move, it would require to move upto a certain poin
 If we were simply to try turning in the direction of the goal while moving straight, we might overshoot the goal or undershoot it since we might not turn enough as we are constantly moving and the required turning angle is calculated with respect to a fixed position. Therefore, we need to identify the extra heading anglee that needs to be turned to face the next point.
 
 ### The Mathematics
-![My Beautifully Drawn Stanley Explanation](Stanley Basic Explanation.jpg)
+![My Beautifully Drawn Stanley Explanation](https://github.com/CocaKhosla/Stanley/blob/images/StanleyImage.jpg?raw=true)
 
 ### How To Use
 __*IF YOU'RE USING ROS MELODIC*__
