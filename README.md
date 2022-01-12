@@ -2,7 +2,7 @@
 
 ### Introduction
 > The Stanley Controller was developed by **Stanford University** to win the **DARPA (Defense Advanced Research Projects Agency) Grand Challenge 2005 Challenge**. 
-> It corrects the heading error of a rover while moving to provide the required turing while moving by providing a *closed feedback loop*.
+> It corrects the heading error of a rover while moving to provide the required turning while moving by providing a *closed feedback loop*.
 
 ### The Need for Stanley Controller
 Traditionally, for a rover to move, it would require to move upto a certain point on a global frame, then stop there and turn again to face to the next point and move up to that point. While this methodology works, it's extremely time consuming and doesn't look very nice. That's where the Stanley Controller comes into picture. 
@@ -11,8 +11,16 @@ If we were simply to try turning in the direction of the goal while moving strai
 
 ### The Mathematics
 ![My Beautifully Drawn Stanley Explanation](https://github.com/CocaKhosla/Stanley/blob/images/StanleyImage.jpg?raw=true)
-The current trajectory has a _minimum lateral error_ with the desired trajectory called the _cross track error = k_. Cross track error is calculated by first finding slope of the _desired trajectory_. Then slope of the error = ```-1/slope```. Therefore, with the slope and our given point, we can get a line that passes through our _current trajectory_ and is _perpendicular_ to the _desired trajectory_. Through the _intersection_ of this line with the _desired trajectory_, we get the point of minimum distance. Therefore, _cross track error_ is simply the _distance_ between these two points.
 
+The current trajectory has a _minimum lateral error_ with the desired trajectory called the _cross track error = e(t)_. Cross track error is calculated by first finding slope of the _desired trajectory_. Then slope of the error = ```-1/slope```. Therefore, with the slope and our given point, we can get a line that passes through our _current trajectory_ and is _perpendicular_ to the _desired trajectory_. Through the _intersection_ of this line with the _desired trajectory_, we get the point of minimum distance. Therefore, _cross track error_ is simply the _distance_ between these two points.
+
+Now that we know _e(t)_, we can calculate the rest using the following formulae. We know the direction of the velocity is our current direction of trajectory. Therefore, _delta_ can be calculated as follows
+
+![Formula](https://github.com/CocaKhosla/Stanley/blob/images/CodeCogsEqn.png?raw=true)
+
+Here, _k_ is the proportional gain which depends on the vehicle's dimensions and is subject to testing. In the case of the simulations of turtlebot3 waffle pi and burger, there is **0** heading error. A smoothening constant _c_ is applied to prevent division by zero.
+
+(If not using these simulations as provided above, one must calculate a heading error)
 
 
 ### How To Use
