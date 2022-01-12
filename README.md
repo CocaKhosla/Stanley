@@ -1,7 +1,7 @@
 # Stanley
 
 ## Introduction
-> The Stanley Controller was developed by **Stanford University** to win the **DARPA (Defense Advanced Research Projects Agency) Grand Challenge 2005 Challenge**. 
+> The Stanley Controller was developed by **Stanford University** to win the **DARPA (Defense Advanced Research Projects Agency) Grand Challenge 2005**. 
 > It corrects the heading error of a rover while moving to provide the required turning while moving by providing a *closed feedback loop*.
 
 ## The Need for Stanley Controller
