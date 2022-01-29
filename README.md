@@ -27,7 +27,7 @@ Here, _k_ is the proportional gain which depends on the vehicle's dimensions and
 
 
 ## How To Use
-__*IF YOU'RE USING ROS MELODIC*__
+__*IF YOU'RE USING ROS NOETIC*__
 1. Clone the repository in your desired ROS package. 
 2. Go into the folder Stanley and make the file ```StanleySim-Working-Demo.py``` and ```live_plotter.py``` executable using the command: 
 ```
