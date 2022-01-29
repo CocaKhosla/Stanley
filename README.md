@@ -1,4 +1,6 @@
 # Stanley
+## Video Demonstration
+![Stanley Video Reduced ‐ Made with Clipchamp](https://user-images.githubusercontent.com/65621792/151651630-61aa2268-a145-4864-91ea-e507ce4cb40d.gif)
 
 ## Introduction
 > The Stanley Controller was developed by **Stanford University** to win the **DARPA (Defense Advanced Research Projects Agency) Grand Challenge 2005**. 
