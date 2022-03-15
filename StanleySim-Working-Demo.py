@@ -59,7 +59,7 @@ def cb(data):
 
 	# for lateral error, we need shortest distance between line and trajectory.
 
-	slope = (arr[ctr][1] - arr[ctr-1][1])/(arr[ctr][0] - arr[ctr-1][0] + 0.0000000001)
+	slope = (arr[ctr][1] - arr[ctr-1][1] + 0.0000000001)/(arr[ctr][0] - arr[ctr-1][0] + 0.0000000001)
 
 	# (y - y1) / (y2 - y1) = (x - x1) / (x2 - x1)
 
