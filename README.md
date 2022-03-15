@@ -5,7 +5,7 @@
 
 ## Introduction
 > The Stanley Controller was developed by **Stanford University** to win the **DARPA (Defense Advanced Research Projects Agency) Grand Challenge 2005**. 
-> It corrects the heading error of a rover while moving to provide the required turning while moving by providing a *closed feedback loop*.
+> It corrects the heading error of a rover while moving to provide the required turning angle using a *closed feedback loop*.
 
 ## The Need for Stanley Controller
 Traditionally, for a rover to move, it would require to move upto a certain point on a global frame, then stop there and turn again to face to the next point and move up to that point. While this methodology works, it's extremely time consuming and doesn't look very nice. That's where the Stanley Controller comes into picture. 
